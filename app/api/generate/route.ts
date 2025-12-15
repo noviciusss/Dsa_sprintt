@@ -5,7 +5,7 @@ import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 // In a real app, use process.env.GEMINI_API_KEY
 // The user provided key (I will use it here for the "ONE GO" requirement, 
 // usually we'd keep it in .env.local)
-const API_KEY = process.env.GEMINI_API_KEY || "AIzaSyCx_YaWbFdqFYw8C9pbqAEW97yOuqzg2ko";
+const API_KEY = process.env.GEMINI_API_KEY ;
 const MODEL_NAME = process.env.GEMINI_MODEL || "gemini-2.5-flash-lite";
 
 const genai = new GoogleGenerativeAI(API_KEY);
